@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume Analysis</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-6">
+
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8 space-y-6">
+
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl font-bold text-gray-900">
+                Resume Analysis
+            </h1>
+            <p class="text-gray-500">
+                AI-generated insights based on your resume
+            </p>
+        </div>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 overflow-auto max-h-[60vh]">
+            <pre class="whitespace-pre-wrap text-gray-800 text-sm leading-relaxed">
+{{ resume_analysis }}
+            </pre>
+        </div>
+
+        <div class="flex justify-center">
+            <a href="/ask"
+               class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700
+                      text-white font-semibold py-3 px-6 rounded-xl transition shadow-lg">
+                Ask Questions About Your Resume
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
